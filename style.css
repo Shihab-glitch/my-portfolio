@@ -5,21 +5,37 @@
 }
 
 body {
-  height: 100vh;
   display: flex;
   flex-direction: column;
+  height: 100vh;
   font-family: sans-serif;
   font-size: 16px;
 }
 
 .page-header {
-  height: 10vh;
+  flex: 1;
   display: flex;
+  align-items: stretch;
   background-color: #5885AF;
 }
 
+.title {
+  flex: 1;
+  font: 32px sans-serif;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.motto {
+  flex: 2;
+  text-align: center;
+  color: antiquewhite;
+  font: 22px sans-serif;
+  padding-top: 45px;
+}
+
 main {
-  height: 85vh;
+  flex: 1;
   display: flex;
 }
 
@@ -40,23 +56,8 @@ h1 {
   font-weight: bold;
 }
 
-.title {
-  flex: .5;
-  font: 32px sans-serif;
-  padding-left: 30px;
-  padding-top: 20px;
-}
-
-.motto {
-  flex: 1;
-  color: antiquewhite;
-  font: 22px sans-serif;
-  padding-top: 45px;
-}
-
 .nav {
   flex: 1;
-  flex-direction: row;
   margin-top: 10px;
   list-style: none;
   padding-left: 0;
@@ -102,7 +103,7 @@ a:active {
 }
 
 .footer {
-  height: 5vh;
+  flex: 1;
   color: #666;
   background-color: #ccc;
   padding: 15px 0;
@@ -138,7 +139,7 @@ a:active {
   border-radius: 25%;
   background-color: #417295;
   color: white;
-  font-size: 60px;
+  font-size: 50px;
   box-shadow: #417295 5px 5px 5px 5px;
   text-align: center;
 }
@@ -152,7 +153,8 @@ a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .form-group{
@@ -181,4 +183,52 @@ a:active {
   padding: 8px;
   margin-top: 6px;
   margin-bottom: 12px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  background-color: #417295;
+  color: white;
+  font-size: 25px;
+  box-shadow: #417295 5px 5px 5px 5px;
+  text-align: center;
+}
+
+.fprojects {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  background-color: sandybrown;
+  color: brown;
+  font-size: 25px;
+  box-shadow: saddlebrown 5px 5px 5px 5px;
+  text-align: center;
+}
+
+.plans {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 30px;
+  border-radius: 5%;
+  box-shadow: #417295 5px 4px;
+  background-color: #bab5b5c5;
+}
+
+#proj {
+  display: flex;
+  flex-direction: column;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+}
+.down {
+  display: flex;
+  flex-direction: row;
 }
