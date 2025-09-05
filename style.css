@@ -202,10 +202,10 @@ a:active {
   flex-direction: column;
   margin: 20px;
   padding: 20px;
-  background-color: sandybrown;
-  color: brown;
+  background-color: #2185D0;
+  color: white;
   font-size: 25px;
-  box-shadow: saddlebrown 5px 5px 5px 5px;
+  box-shadow: #B5DDFF 5px 5px 5px 5px;
   text-align: center;
 }
 
